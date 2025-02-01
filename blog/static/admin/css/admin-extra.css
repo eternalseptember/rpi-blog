@@ -1,0 +1,76 @@
+/* This should be the same thing as ".main > .content". */
+#content-start {
+    flex:  1 0;
+    max-width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+/* The main landing page after removing the recent actions sidebar. */
+.colMS {
+    margin-right: 0px;
+}
+/* "Site Administration" or "Select ___ to change" headers. */
+#content > h1 {
+    text-align: center;
+}
+
+
+
+/* ********************************************************** */
+/* Label, dropdown menu, "Go" button, and number of items selected
+   when looking at a model's overview page. */
+.actions {
+    text-align: center;
+}
+/* The success/error messages when creating/editing a post. */
+.messagelist {
+    position: fixed;
+    bottom: 0px;
+}
+
+
+
+/* ********************************************************** */
+/* The size of a post's title box. */
+#post_form input#id_title {
+    width: 600px;
+}
+
+/* Textbox while creating/editing a post. */
+#post_form textarea#id_body {
+    max-height: 300px !important;
+    overflow-y: scroll;
+}
+
+/* Textbox size while creating/editing a category. */
+#category_form textarea#id_description {
+    width: 500px;
+}
+
+
+
+/* ********************************************************** */
+/* This is for a custom function. */
+.category_posts_list {
+    margin: 0;
+    padding-left: 0;
+}
+
+
+
+/* ********************************************************** */
+/* This resizes the connection.comment textarea in the admin. */
+.field-comment textarea {
+    height: 17px;
+}
+
+
+
+/* ********************************************************** */
+/* This is for testing only */
+/*
+html[data-theme="dark"], :root {
+    --body-bg: #CD5C5C;
+}
+*/

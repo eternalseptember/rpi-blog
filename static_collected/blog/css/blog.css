@@ -1,0 +1,133 @@
+[data-theme="light"] {
+    --highlight_color: #f9e79f;
+    --invalid_input_border: #B22222;
+    --cal_day_link_bg: #EBF5Fb;
+    --calendar_border_color: black;
+}
+[data-theme="dark"] {
+    --highlight_color: #583759;
+    --invalid_input_border: #ff0000;
+    --cal_day_link_bg: #211512;
+    --calendar_border_color: #686A6C;
+}
+
+
+/* Base */
+h1, h2 {
+    text-align: center;
+}
+.pagination {
+    text-align: center;
+}
+.top_nav_bar {
+    margin: 0px;
+    position: relative;
+    height: 40px;
+}
+.nav_links {
+    text-align: left;
+    position: absolute;
+    bottom: -4px;
+    left: 0px;
+}
+.search_form {
+    text-align: right;
+    position: absolute;
+    bottom: -9px;
+    right: 0px;
+}
+li {
+    margin: 0px;
+}
+
+
+/* Detailed view */
+.blog_detail_title {
+    text-align: left !important;
+}
+
+
+/* Highlighting */
+.highlight {
+    background-color: var(--highlight_color);
+}
+
+
+/* Advanced Search Form */
+#advanced_search_form {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 15px;
+}
+#advanced_search_form > .field_wrapper:nth-child(odd) {
+    justify-self: right;
+}
+#advanced_search_form > .field_wrapper:nth-child(even) {
+    justify-self: left;
+}
+.field_wrapper {
+    text-align: left;
+    width: 200px;
+}
+#advanced_search_form > label {
+    margin-bottom: 2px;
+}
+#advanced_search_form > input {
+    margin-bottom: 5px;
+}
+input[aria-invalid='true'] {
+    border: 2px solid var(--invalid_input_border);
+}
+select#id_categories {
+    resize: vertical;
+}
+.advanced_search_buttons {
+    grid-column: 1/-1;
+    text-align: center;
+}
+
+
+/* Category view */
+.category_description {
+    font-style: italic;
+    text-align: center;
+}
+.connection_comment {
+    margin: 0px;
+}
+
+
+/* Monthly archive view */
+.archive_index > li {
+    padding: 0.1em;
+}
+.archive_index_date {
+    font-style: italic;
+    font-size: smaller;
+}
+
+
+/* Printed HTML Calendar */
+table.month, table.year {
+    table-layout: fixed;
+    border-collapse: collapse;
+}
+th.year {
+    text-align: center;
+    font-size: larger;
+}
+.month, .day_of_the_week, .day_of_the_month {
+    text-align: center;
+    padding: 0;
+    margin: 0;
+    font-size: 1.3rem;
+    border: 1px solid var(--calendar_border_color);
+}
+th.month {
+    font-size: larger;
+}
+.daily_link {
+    font-weight: bold !important;
+    background-color: var(--cal_day_link_bg) !important;
+}
+
