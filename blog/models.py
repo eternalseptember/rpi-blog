@@ -5,7 +5,7 @@ from markdownx.utils import markdownify
 
 
 class Category(models.Model):
-    name = models.CharField(max_length=30, verbose_name="categories")
+    name = models.CharField(max_length=255, unique=True, verbose_name="categories", db_collation="case_insensitive")
     description = models.TextField(blank=True)
 
     class Meta:
