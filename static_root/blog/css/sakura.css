@@ -2,18 +2,18 @@
 /* Color for calendar dates are in blog.css. */
 HTML[data-theme="light"] {
     --main_bg_color: #f9f9f9;
-    --main_text_color: #4a4a4a;
-    --unvisited_text_color: #5453A6;
-    --visited_text_color: #342D7E;
-    --hover_text_color: #982c61;
+    --main_text_color: #1a1a1a;
+    --unvisited_text_color: #228B22;
+    --visited_text_color: #004d00;
+    --hover_text_color: #FFA500;
     --quote_bg_color: #f1f1f1;
 }
 HTML[data-theme="dark"] {
-    --main_bg_color: #120c0e;
-    --main_text_color: #d9d8dc;
-    --unvisited_text_color: #eb99a1;
-    --visited_text_color: #e26f7a;
-    --hover_text_color: #9ACD32;
+    --main_bg_color: #1a1a1a;
+    --main_text_color: #F5F5F5;
+    --unvisited_text_color: #B0C4DE;
+    --visited_text_color: #357EC7;
+    --hover_text_color: #FFD700;
     --quote_bg_color: #40363a;
 }
 :root {
@@ -122,7 +122,7 @@ a:visited {
 }
 a:hover {
     color: var(--hover_text_color);
-    border-bottom: 2px solid var(--main_text_color);
+    /* border-bottom: 2px solid var(--main_text_color); */
 }
 
 ul {
