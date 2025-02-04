@@ -5,9 +5,9 @@
     --calendar_border_color: black;
 }
 [data-theme="dark"] {
-    --highlight_color: #583759;
+    --highlight_color: #4B0082;
     --invalid_input_border: #ff0000;
-    --cal_day_link_bg: #211512;
+    --cal_day_link_bg: #09092a;
     --calendar_border_color: #686A6C;
 }
 
