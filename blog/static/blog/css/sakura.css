@@ -11,7 +11,7 @@ HTML[data-theme="light"] {
 HTML[data-theme="dark"] {
     --main_bg_color: #1a1a1a;
     --main_text_color: #F5F5F5;
-    --unvisited_text_color: #B0C4DE;
+    --unvisited_text_color: #81a1ca;
     --visited_text_color: #357EC7;
     --hover_text_color: #FFD700;
     --quote_bg_color: #40363a;
