@@ -24,7 +24,7 @@
                 <ul class="archive_index">
                     {% for post in monthly.list %}
                         <li>
-                            <span class="archive_index_date">{{ post.created_on.date | date:"M j, Y" }}</span> - 
+                            <span class="archive_index_date">{{ post.created_on | date:"M j, Y" }}</span> - 
                             <a href="{% url 'blog_detail' post.pk %}">{{ post.title }}</a>
                         </li>
                     {% endfor %}

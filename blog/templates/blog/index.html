@@ -13,7 +13,7 @@
                 <!-- Date and Categories -->
                 <div class="post_meta_info">
                     <small>
-                        {{ post.created_on.date | date:"M j, Y" }} | Categories:
+                        {{ post.created_on | date:"M j, Y" }} | Categories:
                         {% for category in post.categories.all %}
                             {% comment %}
                             the following line is all on a single line because spaces and line breaks add an extra space at the end of each category tag, which does not look as good if the list is stylized to add commas in between each item.
