@@ -248,7 +248,7 @@ class ArchiveYearView(ArchiveTimeView):
             ).order_by("created_on")
 
         search_results = posts_list.annotate(month=TruncMonth("created_on"))
-        cal = HTMLCalendar(year, posts_list).printyear()
+        cal = HTMLCalendar(year, posts_list).print_year()
 
         # Steps for nav links
         dates = Post.objects.dates("created_on", "year", "ASC")
